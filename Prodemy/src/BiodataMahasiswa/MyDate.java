@@ -31,7 +31,6 @@ public class MyDate {
         return this.year;
     }
 
-
     public String toString(){
         return day + "-" + month + "-" + year;
     }
