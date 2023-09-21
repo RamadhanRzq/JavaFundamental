@@ -6,7 +6,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        System.out.print("Masukan jumlah bintang yang akan dicetak :");
+        System.out.print("Masukan jumlah bintang yang akan dicetak : ");
         int jumlahBintang = input.nextInt();
 
         for(int i = 0; i < jumlahBintang; i++) {
