@@ -3,7 +3,7 @@ package BiodataMahasiswa;
 public class HitungUmur {
     public static void main(String[] args) {
         Mahasiswa mhs1 = new Mahasiswa(123,"Budi",new MyDate(1,10,2000));
-        Mahasiswa mhs2 = new Mahasiswa(123,"Ahmad",new MyDate(11,2,2000));
+        Mahasiswa mhs2 = new Mahasiswa(123,"Ahmad",new MyDate(11,2,2003));
         Mahasiswa mhs3 = new Mahasiswa(123,"Wawan",new MyDate(17,3,2005));
 
         System.out.println(cetakUmur(mhs1));

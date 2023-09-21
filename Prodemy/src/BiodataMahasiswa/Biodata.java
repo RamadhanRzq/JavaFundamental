@@ -15,7 +15,7 @@ public class Biodata {
         System.out.println(mhs.getNama());
         System.out.println(mhs.getNim()+ "\n");
         System.out.println(tglLahir.getTanggal()+ "-" + tglLahir.getBulan() + "-" + tglLahir.getTahun()+"\n");
-        System.out.println(mhs);
+        System.out.println(mhs + "\n");
         System.out.println("Tanggal Lahir : "+ mhs.getTglLahir());
     }
 }

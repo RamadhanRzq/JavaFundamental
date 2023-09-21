@@ -31,7 +31,7 @@ public class Mahasiswa {
         return TanggalLahir;
     }
 
-    public String String (){
-        return nama + nim + TanggalLahir;
+    public String toString (){
+        return "Nama : " + nama + "\n" + "Nim : " + nim + "\n" + "Tanggal Lahir : "+ TanggalLahir;
     }
 }
