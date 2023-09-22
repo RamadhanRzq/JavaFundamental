@@ -61,6 +61,6 @@ public class Soal4 {
             }
         }
         String mhs = Arrays.toString(mahasiswaArray);
-        System.out.print(mhs);
+        System.out.print("\n" + mhs);
     }
 }
