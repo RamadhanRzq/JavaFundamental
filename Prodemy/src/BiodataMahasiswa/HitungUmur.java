@@ -1,5 +1,4 @@
 package BiodataMahasiswa;
-
 public class HitungUmur {
     public static void main(String[] args) {
         Mahasiswa mhs1 = new Mahasiswa(123,"Budi",new MyDate(1,10,2000));

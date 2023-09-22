@@ -1,5 +1,4 @@
 package BiodataMahasiswa;
-
 public class Biodata {
     public static void main(String[] args) throws Exception {
         MyDate tglLahir = new MyDate();

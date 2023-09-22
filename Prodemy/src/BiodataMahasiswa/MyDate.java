@@ -22,13 +22,13 @@ public class MyDate {
     }
 
     public int getTanggal(){
-        return this.day;
+        return day;
     }
     public int getBulan(){
-        return this.month;
+        return month;
     }
     public int getTahun(){
-        return this.year;
+        return year;
     }
 
     public String toString(){

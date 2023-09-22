@@ -1,10 +1,8 @@
 package BiodataMahasiswa;
-
 public class Mahasiswa {
     private String nama;
     private int nim;
     private MyDate TanggalLahir;
-
     public void setNama(String nama) {
         this.nama = nama;
     }
@@ -15,7 +13,7 @@ public class Mahasiswa {
         this.TanggalLahir = tgl;
     }
     public String getNama(){
-        return this.nama;
+        return nama;
     }
     public int getNim(){
         return nim;
@@ -23,7 +21,6 @@ public class Mahasiswa {
     public MyDate getTglLahir(){
         return TanggalLahir;
     }
-
     public String toString (){
         return "Nama : " + nama + "\n" + "Nim : " + nim + "\n" + "Tanggal Lahir : "+ TanggalLahir;
     }
