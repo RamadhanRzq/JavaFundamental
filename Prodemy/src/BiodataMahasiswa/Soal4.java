@@ -1,18 +1,28 @@
 package BiodataMahasiswa;
+
+import java.util.Arrays;
+
 public class Soal4 {
     public static void main(String[] args) {
-        Mahasiswa mhs1 = new Mahasiswa(123,"Ahmad",new MyDate(1,10,2005));
-        Mahasiswa mhs2 = new Mahasiswa(123,"Anwar",new MyDate(11,9,2005));
-        Mahasiswa mhs3 = new Mahasiswa(123,"Aziz",new MyDate(17,11,2005));
+        Mahasiswa mhs1 = new Mahasiswa(123,"Ahmad",new MyDate(1,10,1999));
+        Mahasiswa mhs2 = new Mahasiswa(124,"Anwar",new MyDate(11,9,2000));
+        Mahasiswa mhs3 = new Mahasiswa(125,"Aziz",new MyDate(17,11,2001));
+        Mahasiswa mhs4 = new Mahasiswa(126,"Abdi",new MyDate(17,11,2002));
+        Mahasiswa mhs5 = new Mahasiswa(127,"Agi",new MyDate(17,11,2003));
 
         System.out.println(cetakUmur(mhs1));
         System.out.println(cetakUmur(mhs2));
         System.out.println(cetakUmur(mhs3));
+        System.out.println(cetakUmur(mhs4));
+        System.out.println(cetakUmur(mhs5));
 
-        Mahasiswa[] mahasiswaArray = {mhs1, mhs2, mhs3};
+        Mahasiswa[] mahasiswaArray = {mhs1, mhs2, mhs3,mhs4,mhs5};
         Mahasiswa mahasiswaTermuda = umurTermuda(mahasiswaArray);
 
-        System.out.println("Mahasiswa termuda adalah " + cetakUmur(mahasiswaTermuda));
+        System.out.println("Mahasiswa termuda adalah " + cetakUmur(mahasiswaTermuda) + "\n");
+
+        System.out.println("Mengurutkan mahasiswa dari yang termuda = ");
+        urutkan(mahasiswaArray);
     }
     public static String cetakUmur(Mahasiswa m){
         int umur = 0;
@@ -39,5 +49,18 @@ public class Soal4 {
             }
         }
         return termuda;
+    }
+    public static void urutkan(Mahasiswa[] mahasiswaArray) {
+        for (int i = 0; i < mahasiswaArray.length ; i++) {
+            for (int j=i+1; j < mahasiswaArray.length; j++){
+                if (umurDalamBulan(mahasiswaArray[i]) > umurDalamBulan(mahasiswaArray[j])){
+                    Mahasiswa mhsUrut = mahasiswaArray[i];
+                    mahasiswaArray[i] = mahasiswaArray[j];
+                    mahasiswaArray[j] = mhsUrut;
+                }
+            }
+        }
+        String mhs = Arrays.toString(mahasiswaArray);
+        System.out.print(mhs);
     }
 }
