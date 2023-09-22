@@ -21,13 +21,13 @@ public class MyDate {
         this.year = year;
     }
 
-    public int getTanggal(){
+    public int getDay(){
         return day;
     }
-    public int getBulan(){
+    public int getMonth(){
         return month;
     }
-    public int getTahun(){
+    public int getYear(){
         return year;
     }
 

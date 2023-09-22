@@ -12,7 +12,7 @@ public class HitungUmur {
     public static String cetakUmur(Mahasiswa m){
         int umurDalamBulan = 0;
         int bulanSekarangSejakAwalMasehi = 2023 * 12 + 9;
-        int bulanLahirSejakAwalMasehi = m.getTglLahir().getTahun() * 12 + m.getTglLahir().getBulan();
+        int bulanLahirSejakAwalMasehi = m.getTglLahir().getYear() * 12 + m.getTglLahir().getMonth();
 
         umurDalamBulan = bulanSekarangSejakAwalMasehi - bulanLahirSejakAwalMasehi;
         return "Umur si " + m.getNama()+" adalah " + (umurDalamBulan / 12) + " tahun " + (umurDalamBulan % 12) + " bulan";
