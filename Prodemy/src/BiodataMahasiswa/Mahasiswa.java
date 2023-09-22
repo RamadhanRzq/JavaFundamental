@@ -22,7 +22,7 @@ public class Mahasiswa {
         return TanggalLahir;
     }
     public String toString (){
-        return "Nama : " + nama + " Nim : " + nim + " Tanggal Lahir : "+ TanggalLahir + "\n";
+        return "Nama : " + nama + ", Nim : " + nim + ", Tanggal Lahir : "+ TanggalLahir + "\n";
     }
     public Mahasiswa(){}
     public Mahasiswa(int nim, String nama, MyDate TanggalLahir) {
