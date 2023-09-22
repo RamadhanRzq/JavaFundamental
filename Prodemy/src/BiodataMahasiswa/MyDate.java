@@ -5,13 +5,6 @@ public class MyDate {
     private int month;
     private int year;
 
-    public MyDate (){}
-    public MyDate(int day, int month, int year) {
-        this.day = day;
-        this.month = month;
-        this.year = year;
-    }
-
     public void setDay(int day) throws Exception{
         if (day < 1){
             throw new Exception("Tanggal Tidak Valid");
@@ -40,5 +33,11 @@ public class MyDate {
 
     public String toString(){
         return day + "-" + month + "-" + year;
+    }
+    public MyDate (){}
+    public MyDate(int day, int month, int year) {
+        this.day = day;
+        this.month = month;
+        this.year = year;
     }
 }

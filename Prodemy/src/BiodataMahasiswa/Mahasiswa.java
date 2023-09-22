@@ -5,13 +5,6 @@ public class Mahasiswa {
     private int nim;
     private MyDate TanggalLahir;
 
-    public Mahasiswa(){}
-    public Mahasiswa(int nim, String nama, MyDate TanggalLahir) {
-        this.nim = nim;
-        this.nama = nama;
-        this.TanggalLahir = TanggalLahir;
-    }
-
     public void setNama(String nama) {
         this.nama = nama;
     }
@@ -33,5 +26,11 @@ public class Mahasiswa {
 
     public String toString (){
         return "Nama : " + nama + "\n" + "Nim : " + nim + "\n" + "Tanggal Lahir : "+ TanggalLahir;
+    }
+    public Mahasiswa(){}
+    public Mahasiswa(int nim, String nama, MyDate TanggalLahir) {
+        this.nim = nim;
+        this.nama = nama;
+        this.TanggalLahir = TanggalLahir;
     }
 }
