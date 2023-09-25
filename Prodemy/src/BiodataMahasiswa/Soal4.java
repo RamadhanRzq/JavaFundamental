@@ -1,11 +1,11 @@
 package BiodataMahasiswa;
 public class Soal4 {
     public static void main(String[] args) {
-        Mahasiswa mhs1 = new Mahasiswa(123,"Ahmad",new MyDate(1,2,2003));
-        Mahasiswa mhs2 = new Mahasiswa(124,"Anwar",new MyDate(11,2,2006));
-        Mahasiswa mhs3 = new Mahasiswa(125,"Aziz",new MyDate(17,9,2008));
-        Mahasiswa mhs4 = new Mahasiswa(126,"Abdi",new MyDate(17,4,2001));
-        Mahasiswa mhs5 = new Mahasiswa(127,"Agi",new MyDate(17,7,2001));
+        Mahasiswa mhs1 = new Mahasiswa(123,"Ahmad",new MyDate(1,2,2000));
+        Mahasiswa mhs2 = new Mahasiswa(124,"Anwar",new MyDate(11,2,2000));
+        Mahasiswa mhs3 = new Mahasiswa(125,"Aziz",new MyDate(17,9,2000));
+        Mahasiswa mhs4 = new Mahasiswa(126,"Abdi",new MyDate(17,4,2000));
+        Mahasiswa mhs5 = new Mahasiswa(127,"Agi",new MyDate(17,7,2000));
 
         Mahasiswa[] mahasiswaArray = {mhs1, mhs2, mhs3,mhs4,mhs5};
 
@@ -14,7 +14,6 @@ public class Soal4 {
         }
 
         Mahasiswa mahasiswaTermuda = umurTermuda(mahasiswaArray);
-        System.out.println("\n");
         System.out.println("Mahasiswa termuda adalah " + cetakUmur(mahasiswaTermuda) + "\n");
 
         System.out.println("Mengurutkan mahasiswa dari yang termuda = ");
