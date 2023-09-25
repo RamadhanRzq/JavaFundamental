@@ -1,7 +1,5 @@
 package BiodataMahasiswa;
 public class Soal4 {
-
-
     public static void main(String[] args) {
         Mahasiswa mhs1 = new Mahasiswa(123,"Ahmad",new MyDate(1,2,2003));
         Mahasiswa mhs2 = new Mahasiswa(124,"Anwar",new MyDate(11,2,2006));
