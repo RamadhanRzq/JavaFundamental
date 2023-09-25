@@ -7,13 +7,12 @@ public class Soal4 {
         Mahasiswa mhs4 = new Mahasiswa(126,"Abdi",new MyDate(17,4,2001));
         Mahasiswa mhs5 = new Mahasiswa(127,"Agi",new MyDate(17,7,2001));
 
-        System.out.println(cetakUmur(mhs1));
-        System.out.println(cetakUmur(mhs2));
-        System.out.println(cetakUmur(mhs3));
-        System.out.println(cetakUmur(mhs4));
-        System.out.println(cetakUmur(mhs5));
-
         Mahasiswa[] mahasiswaArray = {mhs1, mhs2, mhs3,mhs4,mhs5};
+
+        for (Mahasiswa i : mahasiswaArray){
+            System.out.println(cetakUmur(i));
+        }
+
         Mahasiswa mahasiswaTermuda = umurTermuda(mahasiswaArray);
         System.out.println("\n");
         System.out.println("Mahasiswa termuda adalah " + cetakUmur(mahasiswaTermuda) + "\n");
@@ -30,7 +29,7 @@ public class Soal4 {
         int umurTahun = umur / 12;
         int umurBulan = umur % 12;
 
-        return m.getNama() + " dengan umur " + umurTahun + " tahun " + umurBulan + " bulan";
+        return m.getNama() + " dengan umur " + umurTahun + " tahun " + umurBulan + " bulan" + ", tanggal lahir : "+ m.getTglLahir();
     }
 
     public static void cetakUmurArr(Mahasiswa[] m){
@@ -42,7 +41,7 @@ public class Soal4 {
             int umurTahun = umur / 12;
             int umurBulan = umur % 12;
 
-            System.out.println(mahasiswa.getNama() + " dengan umur " + umurTahun + " tahun " + umurBulan + " bulan" + " tanggal lahir : "+ mahasiswa.getTglLahir());
+            System.out.println(mahasiswa.getNama() + " dengan umur " + umurTahun + " tahun " + umurBulan + " bulan" + ", tanggal lahir : "+ mahasiswa.getTglLahir());
         }
     }
     public static int umurDalamBulan(Mahasiswa m) {
