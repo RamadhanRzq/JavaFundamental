@@ -1,5 +1,7 @@
 package BiodataMahasiswa;
 public class Soal4 {
+
+
     public static void main(String[] args) {
         Mahasiswa mhs1 = new Mahasiswa(123,"Ahmad",new MyDate(1,2,2003));
         Mahasiswa mhs2 = new Mahasiswa(124,"Anwar",new MyDate(11,2,2006));
@@ -15,17 +17,15 @@ public class Soal4 {
 
         Mahasiswa[] mahasiswaArray = {mhs1, mhs2, mhs3,mhs4,mhs5};
         Mahasiswa mahasiswaTermuda = umurTermuda(mahasiswaArray);
-
+        System.out.println("\n");
         System.out.println("Mahasiswa termuda adalah " + cetakUmur(mahasiswaTermuda) + "\n");
 
         System.out.println("Mengurutkan mahasiswa dari yang termuda = ");
         urutkan(mahasiswaArray);
-        for (Mahasiswa i : mahasiswaArray){
-            System.out.print(i + "\n");
-        }
+        cetakUmurArr(mahasiswaArray);
     }
     public static String cetakUmur(Mahasiswa m){
-        int umur = 0;
+        int umur;
         int bulanSekarangSejakAwalMasehi = 2023 * 12 + 9;
         int bulanLahirSejakAwalMasehi = m.getTglLahir().getYear() * 12 + m.getTglLahir().getMonth();
         umur = bulanSekarangSejakAwalMasehi - bulanLahirSejakAwalMasehi;
@@ -33,6 +33,19 @@ public class Soal4 {
         int umurBulan = umur % 12;
 
         return m.getNama() + " dengan umur " + umurTahun + " tahun " + umurBulan + " bulan";
+    }
+
+    public static void cetakUmurArr(Mahasiswa[] m){
+        for (Mahasiswa mahasiswa : m) {
+            int umur;
+            int bulanSekarangSejakAwalMasehi = 2023 * 12 + 9;
+            int bulanLahirSejakAwalMasehi = mahasiswa.getTglLahir().getYear() * 12 + mahasiswa.getTglLahir().getMonth();
+            umur = bulanSekarangSejakAwalMasehi - bulanLahirSejakAwalMasehi;
+            int umurTahun = umur / 12;
+            int umurBulan = umur % 12;
+
+            System.out.println(mahasiswa.getNama() + " dengan umur " + umurTahun + " tahun " + umurBulan + " bulan" + " tanggal lahir : "+ mahasiswa.getTglLahir());
+        }
     }
     public static int umurDalamBulan(Mahasiswa m) {
         int bulanSekarangSejakAwalMasehi = 2023 * 12 + 9;
