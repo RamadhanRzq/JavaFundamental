@@ -1,5 +1,5 @@
 package BiodataMahasiswa;
-public class Mahasiswa {
+public class Mahasiswa implements Comparable<Mahasiswa>{
     private String nama;
     private int nim;
     private MyDate TanggalLahir;
@@ -29,5 +29,11 @@ public class Mahasiswa {
         this.nim = nim;
         this.nama = nama;
         this.TanggalLahir = TanggalLahir;
+    }
+
+    @Override
+    public int compareTo(Mahasiswa o) {
+
+        return 0;
     }
 }
