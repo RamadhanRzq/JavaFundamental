@@ -12,6 +12,7 @@ public class LuasDanKeliling {
 
         System.out.println("Luasnya adalah = "+luas(inputPanjang,inputLebar));
         System.out.println("Kelilingnya adalah = "+keliling(inputPanjang,inputLebar));
+        input.close();
     }
     private static int luas(int panjang, int lebar){
         int hasil = panjang * lebar;
